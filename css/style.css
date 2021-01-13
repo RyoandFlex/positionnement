@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+/* Les polices */
 @font-face {
   font-family: "Rousseau";
   src: url("../fonts/RousseauDeco.ttf");
@@ -23,6 +24,7 @@ body {
   width: 100%;
 }
 
+/* Menu sticky */
 .menu {
   background-color: black;
   overflow: auto;
@@ -64,12 +66,20 @@ body {
   text-transform: uppercase;
 }
 
+/* Les icônes de Font Awesome */
 .fas {
   font-size: xx-large;
 }
 
+.far {
+  width: 200vw;
+  font-size: 30vw;
+  padding-bottom: 10vw;
+}
+
+/* Footer sticky */
 footer {
-  display: flexbox;
+  display: flex;
   position: fixed;
   width: 100%;
   padding: 5px;
@@ -77,13 +87,28 @@ footer {
   background-color: black;
   color: white;
   font-size: 18px;
-  text-align: center;
+  justify-content: center;
 }
 
 h1 {
   font-family: "Lucy";
   font-size: 100px;
   max-width: 80%;
+}
+
+section>img {
+  padding-bottom: 5vw;
+}
+
+section>div {
+  font-family: "Lucy";
+  font-size: 40px;
+}
+
+div>a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
 section {
@@ -94,6 +119,7 @@ section {
   text-align: center;
 }
 
+/* Mes blocs de couleur (rectangles) utilisés pour toutes les pages */
 .bloc1 {
   background-color: #8D778E;
   border: 3px solid black;
@@ -124,40 +150,7 @@ section {
   height: 12vw;
 }
 
-#bloc2Ex2 {
-  position: relative;
-  left: 25%;
-  background: rgba(30, 60, 69, 0.8);
-}
-
-#bloc3Ex2 {
-  position: relative;
-  right: 90%;
-}
-
-#bloc3Ex3 {
-  position: absolute;
-  left: 45%;
-  bottom: 7%;
-  width: 9vw;
-  height: 9vw;
-}
-
-#bloc3Ex4 {
-  position: absolute;
-  left: 50%;
-  bottom: 7%;
-  width: 9vw;
-  height: 9vw;
-}
-
-#bloc4Ex4 {
-  position: absolute;
-  bottom: 390%;
-  left: -390%;
-  margin: 0;
-}
-
+/* Mes blocs de couleur (cubes) utilisés pour toutes les pages */
 .cube1 {
   background-color: #8D778E;
   border: 3px solid black;
@@ -186,26 +179,129 @@ section {
   height: 12vw;
 }
 
-#sectionEx5 {
+.cube5 {
+  background-color: #FFAE80;
+  border: 3px solid black;
+  width: 12vw;
+  height: 12vw;
+}
+
+/* Exercice 2 */
+#bloc2Ex2 {
+  position: relative;
+  left: 25%;
+  background: rgba(30, 60, 69, 0.8);
+}
+
+#bloc3Ex2 {
+  position: relative;
+  right: 90%;
+}
+
+/* Exercice 3 */
+#bloc3Ex3 {
+  position: absolute;
+  left: 45%;
+  bottom: 7%;
+  width: 9vw;
+  height: 9vw;
+}
+
+/* Exercice 4 */
+#bloc3Ex4 {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  width: 9vw;
+  height: 9vw;
+}
+
+#bloc4Ex4 {
+  position: absolute;
+  bottom: 390%;
+  left: -390%;
+  margin: 0;
+}
+
+/* Exercice 5 */
+#sectionEx5A {
+  position: absolute;
   margin-left: 40%;
   margin-right: 40%;
   margin-top: 10%;
-  justify-content: space-between;
+  justify-content: space-around;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  overflow: auto;
-  position: absolute;
   width: 26vw;
   height: 26vw;
-  flex: 1 1 12vw;
 }
 
-#sectionEx6 {
-  margin-top: 10%;
+#sectionEx5R {
   position: relative;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 26vw;
+  height: 26vw;
 }
 
+/* Exercice 6 */
+#cube1Ex6 {
+  position: relative;
+  left: 36vw;
+  top: 12vw;
+  z-index: 1;
+}
 
+#cube2Ex6 {
+  position: relative;
+  left: 38vw;
+  top: 2vw;
+  z-index: 4;
+  opacity: 0.8;
+}
 
+#cube3Ex6 {
+  position: relative;
+  left: 48vw;
+  top: 0vw;
+  z-index: 3;
+}
+
+#cube4Ex6 {
+  position: relative;
+  left: 50vw;
+  top: -10vw;
+  z-index: 2;
+}
+
+/* Exercice 7 */
+#sectionEx7 {
+  width: 60vw;
+  margin-top: 10%;
+  margin-left: 20%;
+  position: relative;
+  display: inline-block;
+}
+
+#cube1Ex7,
+#cube2Ex7 {
+  float: left;
+}
+
+#cube3Ex7 {
+  width: 60vw;
+  clear: left;
+}
+
+#cube4Ex7,
+#cube5Ex7 {
+  float: right;
+}
